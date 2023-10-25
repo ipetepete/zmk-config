@@ -47,7 +47,7 @@
                         bindings = <
    &kp ESC &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp BSLH
    &trans &kp GRAVE &none      &none      &none      &none        &none     &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp GRAVE
-   &caps_word &kp TILD   &kp LGUI    &kp LALT &kp CLCK &kp DQT     &none     &kp UNDER &kp PLUS &kp LBKT &kp RBKT &kp TILD 
+   &caps_word &kp TILD   &kp LGUI    &kp LALT &kp CLCK &kp DQT     &none     &kp UNDER &kp PLUS &kp LBKT &kp RBKT &kp RSHFT 
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
                 };
@@ -60,8 +60,8 @@
 //                       |     | ADJ | BKSP |    |     |
                         bindings = <
    &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &none &none
-   &trans &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12      &none    &none    &none    &none    &none     &none
+   &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &none &none
+   &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12      &none    &none    &none    &none    &none     &kp RSHFT
                                     &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
                 };
@@ -73,9 +73,9 @@
 // |          |          |          |          |    |         |   | RESET |     |     |     |     |        |
 //                                              |     |     |     |     |     |
                         bindings = <
-   &none           &kp LG(1) &kp LG(2) &kp LG(2) &kp LG(3) &kp LG(4) &kp LG(5)              &kp LG(6)    &kp LG(7)    &kp LG(8)    &kp LG(9)   &kp LG(0)    &none 
-   &rgb_ug RGB_TOG &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none    &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT        &none        &none
-   &none           &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none    &sys_reset   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
+   &none           &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)      &kp LG(N6)    &kp LG(N7)    &kp LG(N8)    &kp LG(N9)   &kp LG(N0)    &none 
+   &rgb_ug RGB_TOG &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none           &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT        &none        &none
+   &none           &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none           &sys_reset   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
                                                              &trans      &trans       &trans        &trans      &trans
                         >;
                 };
