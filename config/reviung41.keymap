@@ -17,7 +17,7 @@
 	macros {
 	      flip: flip {
 		compatible = "zmk,behavior-macro";
-		#binding-cells <0>;
+		#binding-cells = <0>;
 		wait-ms = <40>;
 		tap-ms = <40>;
 		bindings 
