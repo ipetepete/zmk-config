@@ -13,36 +13,27 @@
 
 / {
 
-//       conditional_layers {
-//		compatible = "zmk,conditional-layers";
-//		tri_layer {
-//		    if-layers = <1 2>;
-//		    then-layer = <3>;
-//		};
-//       }; 
-
-/ { 
-   macros {
-      flip: flip {
-        compatible = "zmk,behavior-macro";
-	#binding-cells <0>;
-	wait-ms = <40>;
-	tap-ms = <40>;
-	bindings 
-	  = <&kp LPAR>
-	  , <&kp ╯>
-	  , <&kp °>
-	  , <&kp □>
-	  , <&kp °>
-	  , <&kp RPAR>
-	  , <&kp ╯>
-	  , <&kp ︵>
-	  , <&kp ┻>
-	  , <&kp ━>
-	  , <&kp ┻>;
-      };
-   };
-};
+ 
+	macros {
+	      flip: flip {
+		compatible = "zmk,behavior-macro";
+		#binding-cells <0>;
+		wait-ms = <40>;
+		tap-ms = <40>;
+		bindings 
+		  = <&kp LPAR>
+		  , <&kp ╯>
+		  , <&kp °>
+		  , <&kp □>
+		  , <&kp °>
+		  , <&kp RPAR>
+		  , <&kp ╯>
+		  , <&kp ︵>
+		  , <&kp ┻>
+		  , <&kp ━>
+		  , <&kp ┻>;
+	      };
+	};
 
 	
         keymap {
